@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Fry's Excavating & Grading</title>
+  <meta name="description" content="Privacy Policy for Fry's Excavating & Grading. Learn how we collect, use, and protect your personal information." />
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" href="FrysLogo.png" />
+  <link rel="apple-touch-icon" href="FrysLogo.png" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #1e3a5c;
+      --accent: #e9a620;
+      --light-bg: #f5f5f5;
+      --text: #1f2933;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Montserrat", system-ui, sans-serif;
+      color: var(--text);
+      background-color: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background-color: rgba(30, 58, 92, 0.97);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--white);
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-logo {
+      width: 52px;
+      height: auto;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .nav-title {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+    }
+
+    .nav-subtitle {
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-phone {
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid rgba(233, 166, 32, 0.7);
+      font-weight: 600;
+      font-size: 0.9rem;
+      background: rgba(233, 166, 32, 0.1);
+      white-space: nowrap;
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      padding: 0.5rem;
+    }
+
+    .nav-toggle span {
+      width: 20px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+    }
+
+    /* Page Hero */
+    .page-hero {
+      background: linear-gradient(135deg, #1e3a5c, #2a4a6e);
+      color: var(--white);
+      padding: 3rem 1.25rem;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      margin-bottom: 0.5rem;
+    }
+
+    .page-hero p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* Content */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem;
+    }
+
+    .content h2 {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      margin-top: 2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .content p {
+      margin-bottom: 1rem;
+      color: #4b5563;
+    }
+
+    .content ul {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    .content li {
+      margin-bottom: 0.5rem;
+      color: #4b5563;
+    }
+
+    .content li::marker {
+      color: var(--accent);
+    }
+
+    .content a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .content a:hover {
+      color: var(--accent);
+    }
+
+    .last-updated {
+      background: var(--light-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1.25rem;
+      font-size: 0.8rem;
+      text-align: center;
+      color: #6b7280;
+      background: var(--white);
+    }
+
+    footer span {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    footer a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav">
+      <a href="index.html" class="nav-left">
+        <div class="nav-logo">
+          <img src="FrysLogo.png" alt="Fry's Excavating & Grading logo">
+        </div>
+        <div>
+          <div class="nav-title">Fry's Excavating & Grading</div>
+          <div class="nav-subtitle">Demolition &bull; Hauling &bull; Land Clearing</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="nav-phone">
+          Call: <a href="tel:16182239415">618-223-9415</a>
+        </div>
+      </nav>
+
+      <button class="nav-toggle" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <h1>Privacy Policy</h1>
+    <p>How we collect, use, and protect your information</p>
+  </section>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="last-updated">
+      <strong>Last Updated:</strong> November 2024
+    </div>
+
+    <p>
+      Fry's Excavating & Grading ("we," "us," or "our") respects your privacy and is committed to protecting
+      your personal information. This Privacy Policy explains how we collect, use, and safeguard your
+      information when you visit our website or use our services.
+    </p>
+
+    <h2>Information We Collect</h2>
+    <p>We may collect the following types of information:</p>
+    <ul>
+      <li><strong>Contact Information:</strong> Name, phone number, email address, and project location when you fill out our contact form or call us.</li>
+      <li><strong>Project Details:</strong> Information about your excavating, grading, demolition, hauling, or land clearing needs that you provide to us.</li>
+      <li><strong>Usage Data:</strong> Information about how you interact with our website, including pages visited and time spent on the site (if analytics are enabled).</li>
+    </ul>
+
+    <h2>How We Use Your Information</h2>
+    <p>We use the information we collect to:</p>
+    <ul>
+      <li>Respond to your inquiries and provide quotes for services</li>
+      <li>Communicate with you about your project</li>
+      <li>Schedule and complete excavating, grading, and related services</li>
+      <li>Improve our website and services</li>
+      <li>Comply with legal obligations</li>
+    </ul>
+
+    <h2>Information Sharing</h2>
+    <p>
+      We do not sell, trade, or rent your personal information to third parties. We may share your
+      information only in the following circumstances:
+    </p>
+    <ul>
+      <li><strong>Service Providers:</strong> We may share information with trusted service providers who assist us in operating our website or conducting our business (e.g., email services).</li>
+      <li><strong>Legal Requirements:</strong> We may disclose information if required by law or to protect our rights, safety, or property.</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>Our website may use the following third-party services:</p>
+    <ul>
+      <li><strong>Google Maps:</strong> We embed Google Maps to show our service area. Google may collect data according to their <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</li>
+      <li><strong>Google Fonts:</strong> We use Google Fonts for typography. Google may collect data as described in their privacy policy.</li>
+    </ul>
+
+    <h2>Cookies</h2>
+    <p>
+      Our website may use cookies or similar technologies to enhance your browsing experience.
+      You can control cookie settings through your browser preferences. Disabling cookies may
+      affect some website functionality.
+    </p>
+
+    <h2>Data Security</h2>
+    <p>
+      We take reasonable measures to protect your personal information from unauthorized access,
+      alteration, or destruction. However, no method of transmission over the internet is 100%
+      secure, and we cannot guarantee absolute security.
+    </p>
+
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request access to the personal information we hold about you</li>
+      <li>Request correction of inaccurate information</li>
+      <li>Request deletion of your personal information</li>
+      <li>Opt out of any marketing communications</li>
+    </ul>
+    <p>To exercise these rights, please contact us using the information below.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      Our website and services are not directed to children under 13 years of age. We do not
+      knowingly collect personal information from children under 13.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be posted on this
+      page with an updated "Last Updated" date. We encourage you to review this policy periodically.
+    </p>
+
+    <h2>Contact Us</h2>
+    <p>
+      If you have any questions about this Privacy Policy or our privacy practices, please contact us:
+    </p>
+    <ul>
+      <li><strong>Phone:</strong> <a href="tel:16182239415">618-223-9415</a></li>
+      <li><strong>Location:</strong> Godfrey, IL</li>
+      <li><strong>Contact Form:</strong> <a href="index.html#contact">Submit a message</a></li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      &copy; <span>Fry's Excavating & Grading</span> &bull; Godfrey, IL &bull;
+      <a href="tel:16182239415" style="color:inherit;">618-223-9415</a> &bull;
+      <a href="privacy-policy.html" style="color:inherit;">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    let mobileNavOpen = false;
+    function toggleMobileNav() {
+      const navLinks = document.getElementById('nav-links');
+      mobileNavOpen = !mobileNavOpen;
+      if (mobileNavOpen) {
+        navLinks.style.display = 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.background = '#1e3a5c';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '56px';
+        navLinks.style.right = '12px';
+        navLinks.style.padding = '0.85rem 1rem';
+        navLinks.style.borderRadius = '12px';
+        navLinks.style.boxShadow = '0 10px 26px rgba(0,0,0,0.35)';
+        navLinks.style.gap = '0.6rem';
+      } else {
+        navLinks.style.display = '';
+      }
+    }
+  </script>
+</body>
+</html>

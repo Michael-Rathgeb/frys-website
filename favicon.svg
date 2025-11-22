@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#1e3a5c"/>
+  <!-- Stylized F for Fry's -->
+  <text x="16" y="23" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="bold" fill="#e9a620" text-anchor="middle">F</text>
+</svg>

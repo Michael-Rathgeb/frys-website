@@ -1,0 +1,12 @@
+# Robots.txt for Fry's Excavating & Grading
+# https://frysexcavating.com
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://frysexcavating.com/sitemap.xml
+
+# Crawl-delay (optional - be polite to the server)
+Crawl-delay: 1
